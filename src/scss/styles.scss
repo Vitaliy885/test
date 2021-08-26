@@ -198,6 +198,18 @@
       margin-bottom: 20px;
     }
   }
+
+  &__description {
+    &__title {
+      text-transform: uppercase;
+      margin: 35px auto;
+      font-size: 32px;
+    }
+
+    &__text {
+
+    }
+  }
 }
 
 .buy__discount {
@@ -224,7 +236,7 @@
     border-radius: 50px;
     text-transform: uppercase;
     padding: 10px 35px;
-    width: 200px;
+    width: 250px;
     cursor: pointer;
 
     &:hover {
@@ -236,4 +248,41 @@
     }
   }
 
+}
+
+.gallery {
+
+  &__title {
+    text-transform: uppercase;
+    margin: 35px auto;
+    font-size: 32px;
+  }
+
+  .mosaicflow {
+    &__item {
+      padding: 3px;
+
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 4px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+
+        &:hover {
+          opacity: 0.6;
+          filter: alpha(opacity=60);
+        }
+      }
+
+    }
+
+    &__column {
+      float: left;
+      width: 50%;
+    }
+  }
 }

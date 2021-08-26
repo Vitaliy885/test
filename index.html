@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="dist/js/libs/bootstrap5/bootstrap.min.css">
     <link rel="stylesheet" href="dist/js/libs/bootstrap5/bootstrap-grid.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+          integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
 
@@ -30,7 +33,7 @@
                 <label class="product__form-label">
                     <input class="product__form-input" type="phone" placeholder="Your phone">
                 </label>
-                <button class="product__form-submit">buy it now<i class="fas fa-shopping-cart"></i></button>
+                <button class="product__form-submit">ЗАМОВИТИ ЗАРАЗ<i class="fas fa-shopping-cart"></i></button>
             </form>
         </div>
         <div class="col-5 product__result d-flex flex-column justify-content-center align-items-center product__result-back">
@@ -41,7 +44,7 @@
     </div>
 </div>
 <div class="product__benefits container">
-    <h2 class="product__benefits-title text-center">Benefits</h2>
+    <h2 class="product__benefits-title text-center">ПЕРЕВАГИ</h2>
     <div class="row text-center justify-content-center align-items-start">
         <div class="col-3 d-flex flex-column">
             <img src="dist/image/computer-icons-symbol-check-mark-download-png-favpng-h993WGRT3kAiL8N8yqyWjJyXw.jpg"
@@ -60,19 +63,102 @@
 </div>
 <div class="buy__discount container">
     <div class="row">
-        <div class="col-8 d-flex align-content-center">
-            <p class="buy__discount-text"><span class="white">Clear</span> Value for Your <span class="white">Customer</span></p>
+        <div class="col-6 d-flex align-content-center justify-content-center">
+            <p class="buy__discount-text"><span class="white">Clear</span> Value for Your <span
+                    class="white">Customer</span></p>
         </div>
-        <div class="col-4 d-flex align-content-center justify-content-end">
+        <div class="col-6 d-flex align-content-center justify-content-center">
             <div class="buy__discount-btn">
-                buy it now<i class="fas fa-shopping-cart"></i>
+                ЗАМОВИТИ ЗАРАЗ<i class="fas fa-shopping-cart"></i>
             </div>
+        </div>
+    </div>
+</div>
+<div class="product__description container">
+    <h2 class="product__description__title text-center">Характеристики</h2>
+    <p class="product__description__text">
+        Інструмент для видалення вм'ятин на кузові автомобіля з присоскою.<br>
+        <b>Характеристики:</b>
+    <ul>
+        <li>Виготовлений з високоякісного матеріалу, який дуже міцний.</li>
+        <li>Швидкий і легкий ремонт і видалення вм'ятин на вашому автомобілі.</li>
+        <li>Підходить для автомобільної поверхні листовий метал, холодильник, пральну машину листовий метал.</li>
+    </ul>
+    <br>
+    <ol>
+        <li>Тип: інструмент для ремонту вм'ятин автомобіля</li>
+        <li>Матеріал: метал</li>
+        <li>Особливості: портативний, міцний, без фарбування, інструмент для ремонту</li>
+    </ol>
+    <br>
+    <b>Примітки:</b><br>
+    <span>Через різницю в освітленні і настройках екрану колір товару може відрізнятися від зображень. <br>
+            Заміри зроблені вручну, тому можливі незначні відхилення в розмірах.</span>
+    </p>
+</div>
+<div class="gallery container">
+    <h2 class="gallery__title text-center">Галерея</h2>
+    <div id="mycontainer" class="clearfix  mosaicflow">
+        <div class="mosaicflow__item">
+            <a data-fancybox="gallery" href="/dist/image/01.jpg">
+                <img class="img-responsive" src="/dist/image/01.jpg" alt="">
+            </a>
+        </div>
+        <div class="mosaicflow__item">
+            <a data-fancybox="gallery" href="/dist/image/02.jpg">
+                <img class="img-responsive" src="/dist/image/02.jpg" alt="">
+            </a>
+        </div>
+        <div class="mosaicflow__item">
+            <a data-fancybox="gallery" href="/dist/image/03.jpg">
+                <img class="img-responsive" src="/dist/image/03.jpg" alt="">
+            </a>
+        </div>
+        <div class="mosaicflow__item">
+            <a data-fancybox="gallery" href="/dist/image/04.jpg">
+                <img class="img-responsive" src="/dist/image/04.jpg" alt="">
+            </a>
+        </div>
+        <div class="mosaicflow__item">
+            <a data-fancybox="gallery" href="/dist/image/05.jpg">
+                <img class="img-responsive" src="/dist/image/05.jpg" alt="">
+            </a>
+        </div>
+        <div class="mosaicflow__item">
+            <a data-fancybox="gallery" href="/dist/image/06.jpg">
+                <img class="img-responsive" src="/dist/image/06.jpg" alt="">
+            </a>
+        </div>
+        <div class="mosaicflow__item">
+            <a data-fancybox="gallery" href="/dist/image/07.jpg">
+                <img class="img-responsive" src="/dist/image/07.jpg" alt="">
+            </a>
+        </div>
+        <div class="mosaicflow__item">
+            <a data-fancybox="gallery" href="/dist/image/08.jpg">
+                <img class="img-responsive" src="/dist/image/08.jpg" alt="">
+            </a>
         </div>
     </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="dist/js/libs/bootstrap5/bootstrap.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mosaicflow/0.2.5/jquery.mosaicflow.min.js"
+        integrity="sha512-2Y/Xow6shoroxS5q6TNNYfEWnVSwrgAa5+L52waXFz3AoC2TpwICYDNWC8hu2u3fSeGux23gDzCkdp3irQ7sfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="dist/js/functions.js"></script>
+<script>
+    $(window).load(function () {
+        $('#mycontainer').mosaicflow({
+            itemSelector: '.mosaicflow__item',
+            minItemWidth: 300
+        });
+    });
+</script>
 </body>
 </html>
