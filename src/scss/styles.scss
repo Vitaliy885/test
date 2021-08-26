@@ -190,12 +190,18 @@
       font-size: 32px;
     }
 
-    img {
-      display: block;
-      margin: auto;
+    span {
       width: 50px;
       height: 50px;
-      margin-bottom: 20px;
+      color: $main__color;
+      font-weight: 700;
+      font-size: 18px;
+      border: 2px solid $main__color;
+      border-right: 1px solid #dddddd;
+      border-top: 1px solid #dddddd;
+      border-radius: 50%;
+      margin-bottom: 15px;
+
     }
   }
 
