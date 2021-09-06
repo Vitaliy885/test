@@ -85,34 +85,40 @@
 
     function startTimer(id, deadline) {
         var timerInterval = setInterval(function () {
-            var clock = document.getElementById('clock');
+            var clock = document.getElementsByClassName('timer__display');
             var timer = updateTimer(deadline);
-            var daysSpan = clock.querySelector('.days');
-            var hoursSpan = clock.querySelector('.hours');
-            var minutesSpan = clock.querySelector('.minutes');
-            var secondsSpan = clock.querySelector('.seconds');
-            var allSpans = clock.querySelectorAll('.timer__item__number');
-
-            daysSpan.innerHTML = timer.days;
-            hoursSpan.innerHTML = timer.hours;
-            minutesSpan.innerHTML = timer.minutes;
-            secondsSpan.innerHTML = timer.seconds;
-
-            //animations
-            animateClock(allSpans[3]);
-            if (timer.seconds == 59) animateClock(allSpans[2]);
-            if (timer.minutes == 59 && timer.seconds == 59) animateClock(allSpans[1]);
-            if (timer.hours == 23 && timer.minutes == 59 && timer.seconds == 59) animateClock(allSpans[0]);
 
 
-            //check for end of timer
-            if (timer.total < 1) {
-                clearInterval(timerInterval);
-                daysSpan.innerHTML = "0";
-                hoursSpan.innerHTML = "0";
-                minutesSpan.innerHTML = "0";
-                secondsSpan.innerHTML = "0";
+            for (let i = 0; i < clock.length; i ++){
+                var daysSpan = clock[i].querySelector('.days');
+                var hoursSpan = clock[i].querySelector('.hours');
+                var minutesSpan = clock[i].querySelector('.minutes');
+                var secondsSpan = clock[i].querySelector('.seconds');
+                var allSpans = clock[i].querySelectorAll('.timer__item__number');
+
+                daysSpan.innerHTML = timer.days;
+                hoursSpan.innerHTML = timer.hours;
+                minutesSpan.innerHTML = timer.minutes;
+                secondsSpan.innerHTML = timer.seconds;
+
+                //animations
+                animateClock(allSpans[3]);
+                if (timer.seconds == 59) animateClock(allSpans[2]);
+                if (timer.minutes == 59 && timer.seconds == 59) animateClock(allSpans[1]);
+                if (timer.hours == 23 && timer.minutes == 59 && timer.seconds == 59) animateClock(allSpans[0]);
+
+
+                //check for end of timer
+                if (timer.total < 1) {
+                    clearInterval(timerInterval);
+                    daysSpan.innerHTML = "0";
+                    hoursSpan.innerHTML = "0";
+                    minutesSpan.innerHTML = "0";
+                    secondsSpan.innerHTML = "0";
+                }
             }
+
+
         }, 1000);
     }
 
