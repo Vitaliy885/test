@@ -186,7 +186,7 @@
       }
     }
 
-    #del-countdown {
+    .del-countdown {
       margin: 10px auto;
 
       .timer {
@@ -210,8 +210,43 @@
       }
     }
 
-    &-extra{
+    &-extra {
       background-color: $main__color;
+      padding: 10px 5px;
+
+      .del-countdown {
+        text-align: center;
+
+        .timer {
+          &__text {
+            color: $white__color;
+          }
+
+          &__item {
+            color: $white__color;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            font-size: 14px;
+            border: 1px solid $white__color;
+            align-items: center;
+
+            &__text {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+      .extra-submit {
+        border: 1px solid $white__color;
+      }
+
+      .product__form-description-price {
+        .now {
+          color: $white__color;
+        }
+      }
     }
   }
 

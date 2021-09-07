@@ -123,12 +123,14 @@
     }
 
     window.onload = function () {
-        var clock = document.getElementById('clock');
+        var clock = document.getElementsByClassName('timer__display');
         if (clock !== null) {
-            var d = clock.getAttribute('data-last-seconds');
-            var last_seconds = new Date(d.replace(/-/g, '/'));
-            var deadline = Date.parse(last_seconds);
-            startTimer("clock", deadline);
+            for (let j = 0; j < clock.length; j ++){
+                var d = clock[j].getAttribute('data-last-seconds');
+                var last_seconds = new Date(d.replace(/-/g, '/'));
+                var deadline = Date.parse(last_seconds);
+                startTimer("clock", deadline);
+            }
         }
     };
 
